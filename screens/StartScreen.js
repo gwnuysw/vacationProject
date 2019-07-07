@@ -3,13 +3,10 @@ import {ImageBackground, TouchableHighlight, Alert} from 'react-native';
 import backgroundImg from '../assets/images/download.jpeg';
 
 export default class StartScreen extends React.Component {
-  _onPressButton() {
-    Alert.alert('You tapped the button!')
-  }
   render() {
     return (
       <TouchableHighlight
-      onPress={() => this.props.navigation.navigate("Main")} 
+      onPress={() => this.props.navigation.navigate("SignedOut")}
       underlayColor="white">
         <ImageBackground
         source={backgroundImg}
