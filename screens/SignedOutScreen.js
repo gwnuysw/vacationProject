@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base';
-import { Text } from 'react-native';
+import { Container, Header, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
+//import { Text } from 'react-native';
 
 export default class SignedOut extends React.Component{
   render(){
@@ -21,7 +21,7 @@ export default class SignedOut extends React.Component{
           <Button block>
             <Text>Bebop Sign In</Text>
           </Button>
-          <Button block Success>
+          <Button block success>
             <Text>Naver Sign In</Text>
           </Button>
           <Button block onPress={()=>this.props.navigation.navigate("SignUp")}>

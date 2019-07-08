@@ -3,7 +3,9 @@ import { Container, Header, Content, Form, Item, Input, Label, Button } from 'na
 import { Text } from 'react-native';
 
 export default class SignUpScreen extends React.Component{
+
   render(){
+    
     return (
       <Container>
         <Header />
