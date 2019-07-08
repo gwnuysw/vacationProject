@@ -3,7 +3,7 @@ import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
 import TabBarIcon from '../components/TabBarIcon';
-import HomeScreen from '../screens/HomeScreen';
+import DiaryScreen from '../screens/DiaryScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
@@ -12,28 +12,28 @@ const config = Platform.select({
   default: {},
 });
 
-const HomeStack = createStackNavigator(
+const DiaryStack = createStackNavigator(
   {
-    Home: HomeScreen,
+    Diary: DiaryScreen,
   },
   config
 );
 
-HomeStack.navigationOptions = {
-  tabBarLabel: 'Home',
+DiaryStack.navigationOptions = {
+  tabBarLabel: 'Diary',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-information-circle${focused ? '' : '-outline'}`
-          : 'md-information-circle'
+          ? `ios-book${focused ? '' : '-outline'}`
+          : 'md-book'
       }
     />
   ),
 };
 
-HomeStack.path = '';
+DiaryStack.path = '';
 
 const LinksStack = createStackNavigator(
   {
@@ -68,7 +68,7 @@ SettingsStack.navigationOptions = {
 SettingsStack.path = '';
 
 const tabNavigator = createBottomTabNavigator({
-  HomeStack,
+  DiaryStack,
   LinksStack,
   SettingsStack,
 });

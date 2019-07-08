@@ -1,16 +1,22 @@
 import React from 'react';
 import { Container, Header, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
-//import { Text } from 'react-native';
+import { Image } from 'react-native';
 
 export default class SignedOut extends React.Component{
   render(){
     return (
       <Container>
-        <Header />
+        <Header>
+
+        </Header>
+        <Image
+        source={require('../assets/images/download.jpeg')}
+        style={{ alignItems:'center'}}
+        />
         <Content>
           <Form>
             <Item stackedLabel>
-              <Label>Emain</Label>
+              <Label>Email</Label>
               <Input />
             </Item>
             <Item stackedLabel last>
@@ -18,7 +24,7 @@ export default class SignedOut extends React.Component{
               <Input />
             </Item>
           </Form>
-          <Button block>
+          <Button block onPress={() => this.props.navigation.navigate("Main")}>
             <Text>Bebop Sign In</Text>
           </Button>
           <Button block success>
