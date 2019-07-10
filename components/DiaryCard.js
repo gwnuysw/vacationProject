@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
 export default class DiaryCard extends React.Component {
 
@@ -8,34 +8,29 @@ export default class DiaryCard extends React.Component {
       <Container>
         <Content>
           <Card>
-            <CardItem>
-              <Left>
-                <Thumbnail source={require('../assets/images/download.jpeg')} />
-                <Body>
-                  <Text>NativeBase</Text>
-                  <Text note>GeekyAnts</Text>
-                </Body>
-              </Left>
-            </CardItem>
             <CardItem cardBody>
               <Image source={require('../assets/images/download.jpeg')} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
               <Left>
-                <Button transparent>
-                  <Icon active name="thumbs-up" />
-                  <Text>12 Likes</Text>
-                </Button>
+                <Text style={styles.title}>
+                  서울 여행기
+                </Text>
               </Left>
-              <Body>
-                <Button transparent>
-                  <Icon active name="chatbubbles" />
-                  <Text>4 Comments</Text>
-                </Button>
-              </Body>
-              <Right>
-                <Text>11h ago</Text>
-              </Right>
+            </CardItem>
+            <CardItem>
+              <Left>
+                <Text style={styles.hashtag}>
+                  #서울 #한강
+                </Text>
+              </Left>
+            </CardItem>
+            <CardItem>
+              <Left>
+                <Text>
+                  2019년 7월 3일 ~ 2019년 7월 10일
+                </Text>
+              </Left>
             </CardItem>
           </Card>
         </Content>
@@ -43,3 +38,13 @@ export default class DiaryCard extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  hashtag : {
+    color : '#aaa',
+    fontSize : 16,
+  },
+  title : {
+    fontWeight : 'bold',
+  }
+})

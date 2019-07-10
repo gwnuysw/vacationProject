@@ -8,6 +8,7 @@ export default class DiaryList extends Component {
     return (
       <View style={styles.container}>
         <FlatList
+          horizontal={true}
           data={[
             {key: '1'},
             {key: '2'},
