@@ -1,6 +1,7 @@
 import React from 'react';
-import { Container, Header, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
-import { Image } from 'react-native';
+import { Container, Header, Content, Form, Item, Input, Label, Text, View } from 'native-base';
+import { Image, StyleSheet } from 'react-native';
+import Button from '../components/CustomButton'
 
 export default class SignedOut extends React.Component{
   render(){
@@ -11,7 +12,7 @@ export default class SignedOut extends React.Component{
         </Header>
         <Image
         source={require('../assets/images/download.jpeg')}
-        style={{ alignItems:'center'}}
+        style={{ alignItems:'center', width : null}}
         />
         <Content>
           <Form>
@@ -24,15 +25,18 @@ export default class SignedOut extends React.Component{
               <Input />
             </Item>
           </Form>
-          <Button block onPress={() => this.props.navigation.navigate("Main")}>
-            <Text>Bebop Sign In</Text>
-          </Button>
-          <Button block success>
-            <Text>Naver Sign In</Text>
-          </Button>
-          <Button block onPress={()=>this.props.navigation.navigate("SignUp")}>
-            <Text>Bebop Sign Up</Text>
-          </Button>
+          <Button
+            label = {'Bebop Sign In'}
+            onPress={() => this.props.navigation.navigate("Main")}
+            />
+          <Button 
+            buttonColor = {'green'}
+            label = {'Naver Sign In'}
+            />
+          <Button 
+            label = {'Bebop Sign Up'} 
+            onPress={()=>this.props.navigation.navigate("SignUp")}
+            />
         </Content>
       </Container>
     );

@@ -5,36 +5,34 @@ export default class DiaryCard extends React.Component {
 
   render(){
     return (
-      <Container>
-        <Content>
-          <Card>
-            <CardItem cardBody>
-              <Image source={require('../assets/images/download.jpeg')} style={{height: 200, width: null, flex: 1}}/>
-            </CardItem>
-            <CardItem>
-              <Left>
-                <Text style={styles.title}>
-                  서울 여행기
-                </Text>
-              </Left>
-            </CardItem>
-            <CardItem>
-              <Left>
-                <Text style={styles.hashtag}>
-                  #서울 #한강
-                </Text>
-              </Left>
-            </CardItem>
-            <CardItem>
-              <Left>
-                <Text>
-                  2019년 7월 3일 ~ 2019년 7월 10일
-                </Text>
-              </Left>
-            </CardItem>
-          </Card>
-        </Content>
-      </Container>
+      <Content style={{flexGrow : 1, height : null}}>
+        <Card>
+          <CardItem cardBody>
+            <Image source={require('../assets/images/download.jpeg')} style={{height: 200, width: null, flex: 1}}/>
+          </CardItem>
+          <CardItem style={{padding : 1,}}>
+            <Left>
+              <Text style={styles.title}>
+                서울 여행기
+              </Text>
+            </Left>
+          </CardItem>
+          <CardItem>
+            <Left>
+              <Text style={styles.hashtag}>
+                #서울 #한강
+              </Text>
+            </Left>
+          </CardItem>
+          <CardItem>
+            <Left>
+              <Text>
+                2019년 7월 3일 ~ 2019년 7월 10일
+              </Text>
+            </Left>
+          </CardItem>
+        </Card>
+      </Content>
     );
   }
 }
@@ -46,5 +44,6 @@ const styles = StyleSheet.create({
   },
   title : {
     fontWeight : 'bold',
+    fontSize : 25,
   }
 })
