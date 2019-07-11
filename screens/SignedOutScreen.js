@@ -3,13 +3,10 @@ import { Container, Header, Content, Form, Item, Input, Label, Text, View } from
 import { Image, StyleSheet } from 'react-native';
 import Button from '../components/CustomButton'
 
-export default class SignedOut extends React.Component{
+export default class SignedOutScreen extends React.Component{
   render(){
     return (
-      <Container>
-        <Header>
-
-        </Header>
+      <Container style={{paddingTop: 24}}>
         <Image
         source={require('../assets/images/download.jpeg')}
         style={{ alignItems:'center', width : null}}
@@ -29,12 +26,12 @@ export default class SignedOut extends React.Component{
             label = {'Bebop Sign In'}
             onPress={() => this.props.navigation.navigate("Main")}
             />
-          <Button 
+          <Button
             buttonColor = {'green'}
             label = {'Naver Sign In'}
             />
-          <Button 
-            label = {'Bebop Sign Up'} 
+          <Button
+            label = {'Bebop Sign Up'}
             onPress={()=>this.props.navigation.navigate("SignUp")}
             />
         </Content>

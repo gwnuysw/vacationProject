@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Header, Content, List, ListItem, Text, Left, Body, Right, Icon } from 'native-base';
+import { Container, Header, Content, List, ListItem, Text, Left, Body, Right, Icon, Button } from 'native-base';
 import { ScrollView, StyleSheet, View, Dimensions } from 'react-native';
 
 import DiaryCard from './DiaryCard';
