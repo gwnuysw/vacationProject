@@ -1,0 +1,27 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add react-native --exact
+
+PATH: 
+  /home/seokwon/.yarn/bin:/home/seokwon/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/seokwon/bin:/home/seokwon/Documents/jre1.8.0_181/bin:/usr/local/android-studio/bin/:/home/seokwon/Android/Sdk/emulator:/home/seokwon/Android/Sdk/tools:/home/seokwon/Android/Sdk/tools/bin:/home/seokwon/Android/Sdk/platform-tools
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  11.6.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: read ECONNRESET
+      at TLSWrap.onStreamRead (internal/stream_base_commons.js:162:27)
+
+npm manifest: 
+  {"name":"rncli","version":"0.0.1","private":true,"scripts":{"start":"node node_modules/react-native/local-cli/cli.js start"}}
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

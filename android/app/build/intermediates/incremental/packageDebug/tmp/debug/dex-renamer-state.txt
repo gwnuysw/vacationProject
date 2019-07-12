@@ -1,0 +1,4 @@
+#Fri Jul 12 15:27:19 KST 2019
+base.0=/home/seokwon/Documents/GitHub/beboptravel/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+path.0=classes.dex

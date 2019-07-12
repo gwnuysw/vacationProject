@@ -1,6 +1,4 @@
 import React from 'react';
-import { ExpoConfigView } from '@expo/samples';
-//<ExpoConfigView />
 
 import SearchBar from '../components/SearchBar';
 export default function SettingsScreen() {
