@@ -11,6 +11,7 @@ https://docs.google.com/document/d/1QlvXJfrM4Hx5wTMYEd45Ch6RpqWAzYSmRNXAM10cJrU/
 *!!!관리자권한 cmd, 에뮬레이터 필수!!!*
 <br>
 > choco install -y nodejs.install python2 jdk8
+<br>
 >  npm install -g react-native-cli
 <br>
 <br>
