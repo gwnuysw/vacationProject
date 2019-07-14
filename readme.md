@@ -8,22 +8,31 @@ https://docs.google.com/document/d/1QlvXJfrM4Hx5wTMYEd45Ch6RpqWAzYSmRNXAM10cJrU/
 
 # Windows 10
 
-!!!관리자권한 cmd, 에뮬레이터 필수!!!
+*!!!관리자권한 cmd, 에뮬레이터 필수!!!*
+<br>
 <br>
 choco install -y nodejs.install python2 jdk8
 <br>
+<br>
 npm install -g react-native-cli
+<br>
 <br>
 cd "user dir"
 <br>
+<br>
 git clone https://github.com/gwnuysw/vacationProject.git
+<br>
 <br>
 cd vacationProject
 <br>
+<br>
 npm install
+<br>
 <br>
 npm i jetifier
 <br>
+<br>
 npx jetify
+<br>
 <br>
 react-native run-android
