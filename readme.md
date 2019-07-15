@@ -12,6 +12,14 @@ https://docs.google.com/document/d/1QlvXJfrM4Hx5wTMYEd45Ch6RpqWAzYSmRNXAM10cJrU/
 <br>
 choco install -y nodejs.install python2 jdk8
 <br>
+**nodejs version 8.11.3
+<br>
+react-native-cli versoin 2.0.1
+<br>
+react-native version 0.60.3**
+
+<br>
+> https://nodejs.org/download/release/v8.11.3/
 npm install -g react-native-cli
 <br>
 <br>
@@ -23,18 +31,12 @@ cd vacationProject
 <br>
 npm install
 <br>
+npm install --save realm
+<br>
+react-native link realm
+<br>
 npm i jetifier
 <br>
 npx jetify
 <br>
 react-native run-android
-
-# windows 10 realm
-
-**nodejs version 8.11.3**
-> https://nodejs.org/download/release/v8.11.3/
-<br>
-<br>
-npm install --save realm
-<br>
-react-native link realm
