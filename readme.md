@@ -8,16 +8,17 @@ https://docs.google.com/document/d/1QlvXJfrM4Hx5wTMYEd45Ch6RpqWAzYSmRNXAM10cJrU/
 
 # Windows 10
 
-**!!!관리자권한 cmd, 에뮬레이터 필수!!!**
-<br>
-choco install -y nodejs.install python2 jdk8
-<br>
 **nodejs version 8.11.3
 <br>
 react-native-cli versoin 2.0.1
 <br>
 react-native version 0.60.3**
-
+<br>
+<br>
+**!!!관리자권한 cmd, 에뮬레이터 필수!!!**
+<br>
+choco install -y nodejs.install python2 jdk8
+<br>
 <br>
 > https://nodejs.org/download/release/v8.11.3/
 npm install -g react-native-cli
