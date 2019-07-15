@@ -32,6 +32,7 @@ react-native run-android
 # windows 10 realm
 
 **nodejs version 8.11.3**
+> https://nodejs.org/download/release/v8.11.3/
 <br>
 <br>
 npm install --save realm
