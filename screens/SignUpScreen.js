@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Header, Content, Form, Item, Input, Label, Button } from 'native-base';
 import { Text } from 'react-native';
 var Realm = require('realm');
-let realm;
+
 
 export default class SignUpScreen extends React.Component{
   constructor(props){

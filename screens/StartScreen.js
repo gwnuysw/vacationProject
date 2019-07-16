@@ -1,6 +1,6 @@
 import React from 'react';
 import {ImageBackground, TouchableHighlight, Alert} from 'react-native';
-import backgroundImg from '../assets/images/download.jpeg';
+import backgroundImg from '../assets/images/footsteplogo.png';
 
 export default class StartScreen extends React.Component {
 
