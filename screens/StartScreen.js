@@ -12,7 +12,7 @@ export default class StartScreen extends React.Component {
       underlayColor="white">
         <ImageBackground
         source={backgroundImg}
-        style={{width: '100%', height: '100%'}}>
+        style={{width: '75%', height: '75%'}}>
         </ImageBackground>
       </TouchableHighlight>
     );
