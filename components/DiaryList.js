@@ -48,7 +48,7 @@ export default class DiaryList extends Component {
           containerStyle={styles.paginationContainer}
           dotColor={'rgba(0, 175, 255, 0.92)'}
           dotStyle={styles.paginationDot}
-          inactiveDotColor={{black: '#1a1917'}}
+          inactiveDotColor={'#1a1917'}
           inactiveDotOpacity={0.4}
           inactiveDotScale={0.6}
           carouselRef={this._slider1Ref}
