@@ -9,35 +9,36 @@ import colors from '../constants/Colors';
 const authUrl = 'http://106.10.55.192:9080';
 const Realm = require('realm');
 
-class SignedOutScreen extends React.Component{
+class ForgotpwScreen extends React.Component{
   constructor(props){
     super(props);
     this.state = {
       email: "",
-      password: "",
+      reset_token:"",
+      new_password:"",
     }
   }
  
-  handleLoginPress = () => {
-    const { email, password } = this.state;
-    let creds = Realm.Sync.Credentials.usernamePassword(email, password, false);
-    Realm.Sync.User.login(authUrl, creds).then(user => {
-      this.props.navigation.navigate("Main");
-      // user is logged in
-      // do stuff ...  
-    }).catch(error => {
-      // an auth error has occurred
-      Alert.alert("Alert", "Invalid ID & Password");
+  handleSendTokenPress = () => {
+    const {email, reset_token, new_password} = this.state;
+    Alert.alert("Alert", email);
+    Realm.Sync.User.requestPasswordReset(authUrl, email).then(() => {
+        // query sent successfully.
+        Alert.alert("Alert", "Sending  successfully");
+    }).catch((error) => {
+        // an error has occurred
+        Alert.alert("Alert", "Sending error, Please check your e-mail address");
     });
   };
-  handleNaverLoginPress = () => {
-    Alert.alert("Alert", "preparing....");
-  };
-  handleSignupPress = () => {
-    this.props.navigation.navigate("SignUp");
-  };
-  handleForgotPress = () => {
-    this.props.navigation.navigate("Forgot");
+  handleChangePWPress = () => {
+    const {email, reset_token, new_password} = this.state;
+    Realm.Sync.User.completePasswordReset(authUrl, reset_token, new_password).then(() => {
+        // query sent successfully. 
+        Alert.alert("Alert", "Password changed successfully.");
+    }).catch((error) => {
+        // an error has occurred
+        Alert.alert("Alert", "Please check your token.");
+    });
   };
 
   render(){
@@ -52,26 +53,27 @@ class SignedOutScreen extends React.Component{
             onChangeText={(email) => this.setState({email})}
           />
         </View>
-        
+        <TouchableHighlight style={[styles.buttonContainer, styles.ChangePWButton]} onPress={() =>this.handleSendTokenPress()}>
+            <Text style={styles.ChangePWText}>Send token</Text>
+        </TouchableHighlight>
         <View style={styles.inputContainer}>
           <TextInput style={styles.inputs}
-            placeholder="Password"
+            placeholder="reset token here"
             secureTextEntry={true}
             underlineColorAndroid='transparent'
-            onChangeText={(password) => this.setState({password})}
+            onChangeText={(reset_token) => this.setState({reset_token})}
           />
         </View>
-        <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() =>this.handleLoginPress()}>
-          <Text style={styles.loginText}>Sign In</Text>
-        </TouchableHighlight>
-        <TouchableHighlight style={[styles.buttonContainer, styles.naverloginButton]} onPress={() => this.handleNaverLoginPress()}>
-            <Text style={styles.loginText}>Naver Sign In</Text>
-        </TouchableHighlight>
-        <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() =>this.handleSignupPress()}>
-            <Text style={styles.loginText}>Sign Up</Text>
-        </TouchableHighlight>
-        <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() =>this.handleForgotPress()}>
-            <Text style={styles.loginText}>Forgot my password</Text>
+        <View style={styles.inputContainer}>
+          <TextInput style={styles.inputs}
+            placeholder="new password"
+            secureTextEntry={true}
+            underlineColorAndroid='transparent'
+            onChangeText={(new_password) => this.setState({new_password})}
+          />
+        </View>
+        <TouchableHighlight style={[styles.buttonContainer, styles.ChangePWButton]} onPress={() =>this.handleChangePWPress()}>
+            <Text style={styles.ChangePWText}>Change password</Text>
         </TouchableHighlight>
       </View>
     );
@@ -121,15 +123,12 @@ const styles = StyleSheet.create({
     width:250,
     borderRadius:30,
   },
-  loginButton: {
+  ChangePWButton: {
     backgroundColor: "#00b5ec",
   },
-  loginText: {
+  ChangePWText: {
     color: 'white',
-  },
-  naverloginButton: {
-    backgroundColor: 	'#228B22',
   },
 });
 
-export default SignedOutScreen;
+export default ForgotpwScreen;
