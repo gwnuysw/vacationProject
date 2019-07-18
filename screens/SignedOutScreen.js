@@ -59,7 +59,7 @@ class SignedOutScreen extends React.Component{
           />
         </View>
          <TouchableHighlight style={[styles.buttonContainer, styles.loginButton]} onPress={() =>this.handleLoginPress()}>
-          <Text style={styles.loginText}>Bebop Sign In</Text>
+          <Text style={styles.loginText}>Sign In</Text>
         </TouchableHighlight>
         <TouchableHighlight style={[styles.buttonContainer, styles.naverloginButton]} onPress={() => this.handleNaverLoginPress()}>
             <Text style={styles.loginText}>Naver Sign In</Text>
