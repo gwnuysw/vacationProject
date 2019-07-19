@@ -4,7 +4,7 @@ import ListThumbnail from './ListThumbnail';
 export default class SearchBar extends Component {
   render() {
     return (
-      <Container style={{paddingTop: 24}}>
+      <Container>
         <Header searchBar rounded>
           <Item>
             <Icon name="ios-search" />
