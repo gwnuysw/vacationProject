@@ -14,7 +14,6 @@ export default createAppContainer(
     SignedOut: SignedOutScreen,
     SignUp: SignUpScreen,
     NewDiary: NewDiaryScreen,
-    Main: MainTabNavigator
     Main: MainTabNavigator,
     Forgot : ForgotpwScreen,
   },

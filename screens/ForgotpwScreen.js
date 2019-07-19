@@ -21,7 +21,6 @@ class ForgotpwScreen extends React.Component{
  
   handleSendTokenPress = () => {
     const {email, reset_token, new_password} = this.state;
-    Alert.alert("Alert", email);
     Realm.Sync.User.requestPasswordReset(authUrl, email).then(() => {
         // query sent successfully.
         Alert.alert("Alert", "Sending  successfully");
