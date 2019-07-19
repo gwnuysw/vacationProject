@@ -17,20 +17,21 @@ class SignedOutScreen extends React.Component{
       password: "",
     }
   }
- 
+
   handleLoginPress = () => {
     const { email, password } = this.state;
     let creds = Realm.Sync.Credentials.usernamePassword(email, password, false);
     Realm.Sync.User.login(authUrl, creds).then(user => {
       this.props.navigation.navigate("Main");
       // user is logged in
-      // do stuff ...  
+      // do stuff ...
     }).catch(error => {
       // an auth error has occurred
       Alert.alert("Alert", "Invalid ID & Password");
     });
   };
   handleNaverLoginPress = () => {
+    this.props.navigation.navigate("Main");
     Alert.alert("Alert", "preparing....");
   };
   handleSignupPress = () => {
@@ -49,7 +50,7 @@ class SignedOutScreen extends React.Component{
             onChangeText={(email) => this.setState({email})}
           />
         </View>
-        
+
         <View style={styles.inputContainer}>
           <TextInput style={styles.inputs}
             placeholder="Password"
