@@ -7,6 +7,7 @@ import DiaryScreen from '../screens/DiaryScreen';
 import SearchScreen from '../screens/SearchScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
+
 const config = Platform.select({
   web: { headerMode: 'screen' },
   default: {},

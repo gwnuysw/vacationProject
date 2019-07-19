@@ -5,6 +5,7 @@ import MainTabNavigator from './MainTabNavigator';
 import StartScreen from '../screens/StartScreen';
 import SignedOutScreen from '../screens/SignedOutScreen';
 import SignUpScreen from '../screens/SignUpScreen';
+import NewDiaryScreen from '../screens/NewDiaryScreen';
 import ForgotpwScreen from '../screens/ForgotpwScreen';
 
 const switchNavigator = createSwitchNavigator({
@@ -13,7 +14,8 @@ const switchNavigator = createSwitchNavigator({
   Start: StartScreen,
   SignedOut: SignedOutScreen,
   SignUp: SignUpScreen,
-  Main: MainTabNavigator
+  NewDiary: NewDiaryScreen,
+  Main: MainTabNavigator,
   Forgot : ForgotpwScreen,
 },
 {
