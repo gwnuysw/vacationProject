@@ -1,49 +1,70 @@
-import React from 'react';
-import { Image, StyleSheet } from 'react-native';
-import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
-export default class DiaryCard extends React.Component {
+import React, { Component } from 'react';
+import { View, Text, Image, TouchableOpacity } from 'react-native';
+import PropTypes from 'prop-types';
+import { ParallaxImage } from 'react-native-snap-carousel';
+import styles from '../styles/SlideEntry.style';
 
-  render(){
+export default class DiaryCard extends Component {
+  static propTypes = {
+    data: PropTypes.object.isRequired,
+    parallax: PropTypes.bool,
+    parallaxProps: PropTypes.object
+  };
+
+  get image() {
+    const { data: { illustration }, parallax, parallaxProps } = this.props;
+
+    return parallax ? (
+      <ParallaxImage
+        source={{ uri: illustration }}
+        containerStyle={styles.imageContainer}
+        style={styles.image}
+        parallaxFactor={0.35}
+        showSpinner={true}
+        spinnerColor={'rgba(0, 0, 0, 0.25)'}
+        {...parallaxProps}
+      />
+    ) : (
+        <Image
+          source={{ uri: illustration }}
+          style={styles.image}
+        />
+      );
+  }
+
+  render() {
+    const { data: { title, subtitle }} = this.props;
+
+    const uppercaseTitle = title ? (
+      <Text
+        style={styles.title}
+        numberOfLines={2}
+      >
+        {title.toUpperCase()}
+      </Text>
+    ) : false;
+
     return (
-      <Content style={{flexGrow : 1, height : null}}>
-        <Card>
-          <CardItem cardBody>
-            <Image source={require('../assets/images/download.jpeg')} style={{height: 200, width: null, flex: 1}}/>
-          </CardItem>
-          <CardItem style={{padding : 1,}}>
-            <Left>
-              <Text style={styles.title}>
-                서울 여행기
-              </Text>
-            </Left>
-          </CardItem>
-          <CardItem>
-            <Left>
-              <Text style={styles.hashtag}>
-                #서울 #한강
-              </Text>
-            </Left>
-          </CardItem>
-          <CardItem>
-            <Left>
-              <Text>
-                2019년 7월 3일 ~ 2019년 7월 10일
-              </Text>
-            </Left>
-          </CardItem>
-        </Card>
-      </Content>
+      <TouchableOpacity
+        activeOpacity={1}
+        style={styles.slideInnerContainer}
+        onPress={() => { alert(`You've clicked '${title}'`); }}
+      >
+        <View style={styles.shadow} />
+        <View style={styles.imageContainer}>
+          {this.image}
+          <View style={styles.radiusMask} />
+        </View>
+        <View style={styles.textContainer}>
+          {uppercaseTitle}
+          <Text
+            style={styles.subtitle}
+            numberOfLines={2}
+          >
+            {subtitle}
+          </Text>
+        </View>
+      </TouchableOpacity>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  hashtag : {
-    color : '#aaa',
-    fontSize : 16,
-  },
-  title : {
-    fontWeight : 'bold',
-    fontSize : 25,
-  }
-})
