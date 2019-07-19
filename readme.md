@@ -41,3 +41,9 @@ npm i jetifier
 npx jetify
 <br>
 react-native run-android
+=======
+<br>
+<br>
+
+회원가입 패스워드 강도측정 컴포넌트
+> https://www.npmjs.com/package/react-native-password-strength-meter#password-input-props
