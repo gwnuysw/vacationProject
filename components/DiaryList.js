@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet } from 'react-native';
+import { View, StyleSheet, ImageBackground } from 'react-native';
 import Carousel, { Pagination } from 'react-native-snap-carousel';
 import { sliderWidth, itemWidth } from '../styles/SlideEntry.style';
 import DiaryCard from './DiaryCard';
@@ -28,32 +28,42 @@ export default class DiaryList extends Component {
     const { slider1ActiveSlide } = this.state;
     return (
       <View style={styles.exampleContainer}>
-        <Carousel
-          ref={c => this._slider1Ref = c}
-          data={ENTRIES1}
-          renderItem={this._renderItemWithParallax}
-          sliderWidth={sliderWidth}
-          itemWidth={itemWidth}
-          hasParallaxImages={true}
-          firstItem={SLIDER_1_FIRST_ITEM}
-          inactiveSlideScale={0.94}
-          inactiveSlideOpacity={0.7}
-          containerCustomStyle={styles.slider}
-          contentContainerCustomStyle={styles.sliderContentContainer}
-          onSnapToItem={(index) => this.setState({ slider1ActiveSlide: index })}
-        />
-        <Pagination
-          dotsLength={ENTRIES1.length}
-          activeDotIndex={slider1ActiveSlide}
-          containerStyle={styles.paginationContainer}
-          dotColor={'rgba(0, 175, 255, 0.92)'}
-          dotStyle={styles.paginationDot}
-          inactiveDotColor={'#1a1917'}
-          inactiveDotOpacity={0.4}
-          inactiveDotScale={0.6}
-          carouselRef={this._slider1Ref}
-          tappableDots={!!this._slider1Ref}
-        />
+        <ImageBackground
+          source={{ uri: ENTRIES1[slider1ActiveSlide].illustration }}
+          style={{
+            width: '100%',
+            height: '100%',
+          }}
+          blurRadius={1}
+        >
+          <Carousel
+            ref={c => this._slider1Ref = c}
+            data={ENTRIES1}
+            renderItem={this._renderItemWithParallax}
+            sliderWidth={sliderWidth}
+            itemWidth={itemWidth}
+            hasParallaxImages={true}
+            firstItem={SLIDER_1_FIRST_ITEM}
+            inactiveSlideScale={0.94}
+            inactiveSlideOpacity={0.7}
+            containerCustomStyle={styles.slider}
+            contentContainerCustomStyle={styles.sliderContentContainer}
+            onSnapToItem={(index) => this.setState({ slider1ActiveSlide: index })}
+          />
+          <Pagination
+            dotsLength={ENTRIES1.length}
+            activeDotIndex={slider1ActiveSlide}
+            containerStyle={styles.paginationContainer}
+            //dotColor={'rgba(0, 175, 255, 0.92)'} // blue color
+            dotColor={'rgba(255, 255, 255, 0.95)'}
+            dotStyle={styles.paginationDot}
+            inactiveDotColor={'rgba(255, 255, 255, 0.75)'}
+            inactiveDotOpacity={0.4}
+            inactiveDotScale={0.6}
+            carouselRef={this._slider1Ref}
+            tappableDots={!!this._slider1Ref}
+          />
+        </ImageBackground>
       </View>
     );
   }
