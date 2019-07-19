@@ -8,7 +8,7 @@ export default class DiaryScreen extends React.Component {
     return (
       <Content >
         <DiaryList />
-        <View style={{flexDirection: 'row', justifyContent: 'flex-end'}}>
+        <View style={{position: 'absolute', bottom:0, right:0}}>
           <TouchableHighlight onPress={() => this.props.navigation.navigate("NewDiary")}>
             <Image
              style={styles.addIcon}
