@@ -1,10 +1,10 @@
 import React from 'react';
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import MainTabNavigator from './MainTabNavigator';
-
 import StartScreen from '../screens/StartScreen';
 import SignedOutScreen from '../screens/SignedOutScreen';
 import SignUpScreen from '../screens/SignUpScreen';
+import NewDiaryScreen from '../screens/NewDiaryScreen';
 import ForgotpwScreen from '../screens/ForgotpwScreen';
 export default createAppContainer(
   createSwitchNavigator({
@@ -13,6 +13,8 @@ export default createAppContainer(
     Start: StartScreen,
     SignedOut: SignedOutScreen,
     SignUp: SignUpScreen,
+    NewDiary: NewDiaryScreen,
+    Main: MainTabNavigator
     Main: MainTabNavigator,
     Forgot : ForgotpwScreen,
   },

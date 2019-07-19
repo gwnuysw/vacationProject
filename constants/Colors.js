@@ -1,11 +1,6 @@
 const tintColor = '#2f95dc';
-const colors = {
-  BLACK: "#000",
-  WHITE: "#FFF",
-  DODGER_BLUE: "#428AF8",
-  SILVER: "#BEBEBE",
-  TORCH_RED: "#F8262F",
-  MISCHKA: "#E5E4E6",
+export default {
+  tintColor,
   tabIconDefault: '#ccc',
   tabIconSelected: tintColor,
   tabBar: '#fefefe',
@@ -14,6 +9,12 @@ const colors = {
   warningBackground: '#EAEB5E',
   warningText: '#666804',
   noticeBackground: tintColor,
-  noticeText: '#fff'
+  noticeText: '#fff',
 };
-export default colors;
+
+export const colors = {
+  black: '#1a1917',
+  gray: '#888888',
+  background1: '#B721FF',
+  background2: '#21D4FD',
+}
