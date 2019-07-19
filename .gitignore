@@ -58,6 +58,7 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
+android/
 /android/.gradle/*
 /android/app/build/*
 /ios/rncli.xcoeproj/project.pbxproj

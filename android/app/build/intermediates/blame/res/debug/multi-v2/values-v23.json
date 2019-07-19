@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/seokwon/Documents/GitHub/beboptravel/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/home/seokwon/.gradle/caches/transforms-2/files-2.1/ccdbea27dad984a3531445f34d2c898e/res/values-v23/values-v23.xml",
+                    "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

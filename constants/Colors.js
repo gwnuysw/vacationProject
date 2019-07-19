@@ -1,7 +1,11 @@
 const tintColor = '#2f95dc';
-
-export default {
-  tintColor,
+const colors = {
+  BLACK: "#000",
+  WHITE: "#FFF",
+  DODGER_BLUE: "#428AF8",
+  SILVER: "#BEBEBE",
+  TORCH_RED: "#F8262F",
+  MISCHKA: "#E5E4E6",
   tabIconDefault: '#ccc',
   tabIconSelected: tintColor,
   tabBar: '#fefefe',
@@ -10,9 +14,8 @@ export default {
   warningBackground: '#EAEB5E',
   warningText: '#666804',
   noticeBackground: tintColor,
-  noticeText: '#fff',
+  noticeText: '#fff'
 };
-
 export const colors = {
   black: '#1a1917',
   gray: '#888888',

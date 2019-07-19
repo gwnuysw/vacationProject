@@ -21,8 +21,8 @@ choco install -y nodejs.install python2 jdk8
 <br>
 <br>
 > https://nodejs.org/download/release/v8.11.3/
-npm install -g react-native-cli
 <br>
+npm install -g react-native-cli
 <br>
 cd "user dir"
 <br>

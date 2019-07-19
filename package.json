@@ -15,6 +15,7 @@
     "react-native-ionicons": "^4.5.6",
     "react-native-snap-carousel": "^3.8.0",
     "react-navigation": "^3.11.0"
+    "realm": "^2.29.1"
   },
   "devDependencies": {
     "@babel/core": "^7.5.0",

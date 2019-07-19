@@ -1,6 +1,6 @@
 import React from 'react';
 import {ImageBackground, TouchableHighlight, Alert} from 'react-native';
-import backgroundImg from '../assets/images/download.jpeg';
+import backgroundImg from '../assets/images/footsteplogo.png';
 
 export default class StartScreen extends React.Component {
 
@@ -12,7 +12,7 @@ export default class StartScreen extends React.Component {
       underlayColor="white">
         <ImageBackground
         source={backgroundImg}
-        style={{width: '100%', height: '100%'}}>
+        style={{width: '75%', height: '75%'}}>
         </ImageBackground>
       </TouchableHighlight>
     );
