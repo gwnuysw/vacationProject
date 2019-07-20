@@ -15,6 +15,8 @@ import com.rncli.R;
 
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
+// react-native-naver-login
+import com.dooboolab.naverlogin.RNNaverLoginPackage;
 // realm
 import io.realm.react.RealmReactPackage;
 
@@ -51,6 +53,7 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(),
       new RNGestureHandlerPackage(),
+      new RNNaverLoginPackage(),
       new RealmReactPackage()
     ));
   }
