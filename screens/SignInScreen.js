@@ -12,10 +12,10 @@ const Realm = require('realm');
 
 console.log('Naver Login');
 const initials = {
-  kConsumerKey: 'VN6WKGFQ3pJ0xBXRtlN9',
-  kConsumerSecret: 'AHBgzH9ZkM',
-  kServiceAppName: 'dooboolab',
-  kServiceAppUrlScheme: 'dooboolaburlscheme', // only for iOS
+  kConsumerKey: '채워야함',
+  kConsumerSecret: '채워야함',
+  kServiceAppName: '채워야함',
+  kServiceAppUrlScheme: '채워야함', // only for iOS
 };
 
 const naverLogin = (props) => {
@@ -79,7 +79,7 @@ onNaverLogin = async() => {
   }
 }
 
-class SignedOutScreen extends React.Component{
+class SignInScreen extends React.Component{
   constructor(props){
     super(props);
     this.state = {
@@ -204,4 +204,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SignedOutScreen;
+export default SignInScreen;
