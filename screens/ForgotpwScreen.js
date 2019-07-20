@@ -5,6 +5,7 @@ import Button from '../components/CustomButton';
 import imageLogo from '../assets/images/footsteplogo.png';
 import strings from '../constants/strings';
 import colors from '../constants/Colors';
+import OneSignal from 'react-native-onesignal';
 
 const authUrl = 'http://106.10.55.192:9080';
 const Realm = require('realm');
@@ -17,6 +18,9 @@ class ForgotpwScreen extends React.Component{
       reset_token:"",
       new_password:"",
     }
+    OneSignal.setLogLevel(6, 0);
+
+    OneSignal.init("016b93d7-f6e0-4e39-a29f-5fb3335a2dcf", {kOSSettingsKeyAutoPrompt : true});
   }
  
   handleSendTokenPress = () => {

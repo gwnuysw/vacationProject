@@ -144,12 +144,12 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
-    },
-    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-mdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
@@ -170,6 +170,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_custom.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_template_big_media_custom.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
@@ -242,6 +246,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_cascading_menu_item_layout.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\layout\\abc_cascading_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow_custom.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_template_big_media_narrow_custom.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_black_48dp.png.flat",
@@ -340,6 +348,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\color\\abc_hint_foreground_material_light.xml"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_package_list_item.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\layout\\package_list_item.xml"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_16dp.png"
     },
@@ -380,16 +392,20 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-mdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
-        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
-    },
-    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_cab_background_top_material.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_half_black_36dp.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_selector_disabled_holo_light.9.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_lines_media.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_template_lines_media.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
@@ -440,6 +456,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxhdpi-v4\\abc_textfield_default_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_browser_actions_context_menu_page.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\ec2e79a27eb4a3e44d6b6867ca88a2f1\\res\\layout\\browser_actions_context_menu_page.xml"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-mdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
@@ -458,6 +478,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_tab_indicator_material.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_bottom_background_img.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\drawable-xhdpi-v4\\bottom_background_img.png"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -492,12 +516,16 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kwlee\\vacationProject\\android\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_redbox_item_title.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\0c360f4e76b64e6210e339bce1c4acc4\\res\\layout\\redbox_item_title.xml"
     },
     {
-        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher_round.png.flat",
-        "source": "C:\\Users\\kwlee\\vacationProject\\android\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher_round.png"
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_custom_tab_dialog.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\layout\\fragment_custom_tab_dialog.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -514,6 +542,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-mdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_cancel_action.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_media_cancel_action.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
@@ -572,6 +604,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxhdpi-v4\\abc_text_select_handle_left_mtrl_dark.png"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_naver_icon.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\drawable-xhdpi-v4\\naver_icon.png"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout-watch-v20_abc_alert_dialog_title_material.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\layout-watch-v20\\abc_alert_dialog_title_material.xml"
     },
@@ -610,6 +646,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-ldrtl-hdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
@@ -696,12 +736,16 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xhdpi-v4\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
-        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_media_action.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\kwlee\\vacationProject\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
@@ -912,6 +956,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_close_btn_img_black.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\drawable-xhdpi-v4\\close_btn_img_black.png"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xhdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png"
     },
@@ -936,12 +984,12 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-mdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
-        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
-        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\layout\\abc_popup_menu_header_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_header_item_layout.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -1134,6 +1182,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_nlogin_browser_view.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\layout\\nlogin_browser_view.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -1500,6 +1552,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-hdpi-v4\\abc_text_select_handle_middle_mtrl_light.png"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media_custom.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_ab_back_material.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable\\abc_ic_ab_back_material.xml"
     },
@@ -1522,6 +1578,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_close_btn_img.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\drawable-xhdpi-v4\\close_btn_img.png"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_list_focused_holo.9.png.flat",
@@ -1552,6 +1612,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xhdpi-v4\\abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_login_btn_img.png.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\6f7a9a4d0c0d1661a48cacefd1e6d3ae\\res\\drawable-xhdpi-v4\\login_btn_img.png"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
@@ -1576,6 +1640,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxxhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_media.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_template_media.xml"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_star_half_black_16dp.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
@@ -1592,12 +1660,20 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\layout\\abc_expanded_menu_layout.xml"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_browser_actions_context_menu_row.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\ec2e79a27eb4a3e44d6b6867ca88a2f1\\res\\layout\\browser_actions_context_menu_row.xml"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_dark.xml.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-xxhdpi-v4\\abc_btn_switch_to_on_mtrl_00001.9.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_big_media_narrow.xml.flat",
+        "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\78c72cc4babb0a5bcbed5c52884aa587\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
