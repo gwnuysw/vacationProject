@@ -496,6 +496,10 @@
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\0c360f4e76b64e6210e339bce1c4acc4\\res\\layout\\redbox_item_title.xml"
     },
     {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher_round.png.flat",
+        "source": "C:\\Users\\kwlee\\vacationProject\\android\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher_round.png"
+    },
+    {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-ldrtl-xxxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
@@ -810,6 +814,10 @@
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-mdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "C:\\Users\\kwlee\\.gradle\\caches\\transforms-2\\files-2.1\\e091afb67d01acabd2df7727da74d129\\res\\drawable-ldrtl-mdpi-v17\\abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-ldpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\kwlee\\vacationProject\\android\\app\\src\\main\\res\\mipmap-ldpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\kwlee\\vacationProject\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
