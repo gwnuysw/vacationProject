@@ -1,13 +1,27 @@
 import React from 'react';
-import { Image, StyleSheet } from 'react-native';
+import { StyleSheet, Text } from 'react-native';
+import { Content, View, Container } from 'native-base';
+import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
 
-import addicon from '../assets/images/addicon.png';
 export default class Map extends React.Component {
-
-  render(){
-    return (
-      <Image
-       source={addicon}/>
-    );
-  }
+    render() {
+        return (
+            <MapView
+                provider={PROVIDER_GOOGLE}
+                style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                }}
+                initialRegion={{
+                    latitude: 37.78825,
+                    longitude: -122.4324,
+                    latitudeDelta: 0.0922,
+                    longitudeDelta: 0.0421,
+                }}
+            />
+        );
+    }
 }
