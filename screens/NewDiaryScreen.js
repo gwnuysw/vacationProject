@@ -1,9 +1,64 @@
 import React from 'react';
-import { TouchableHighlight, StyleSheet, View, Image } from 'react-native';
-import { Container, Header, Left, Body, Right, Button, Icon, Title, Text } from 'native-base';
-
+import { TouchableHighlight,
+  PixelRatio,
+  TouchableOpacity,
+  StyleSheet,
+  View,
+  Image,
+  ScrollView} from 'react-native';
+import { Container,
+  Header,
+  Left,
+  Body,
+  Right,
+  Button,
+  Icon,
+  Title,
+  Text } from 'native-base';
+import ImagePicker from 'react-native-image-picker';
 import addicon from '../assets/images/addicon.png';
+import ImageList from '../components/ImageList';
 export default class NewDiaryScreen extends React.Component {
+  state = {
+    avatarSource: []
+  };
+  constructor(props) {
+    super(props);
+    this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
+  }
+  selectPhotoTapped() {
+    const options = {
+      quality: 1.0,
+      maxWidth: 500,
+      maxHeight: 500,
+      storageOptions: {
+        skipBackup: true,
+      },
+    };
+
+    ImagePicker.showImagePicker(options, response => {
+      console.log('Response = ', response);
+
+      if (response.didCancel) {
+        console.log('User cancelled photo picker');
+      } else if (response.error) {
+        console.log('ImagePicker Error: ', response.error);
+      } else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton);
+      } else {
+        let source = {uri: response.uri};
+
+        // You can also display the image using data:
+        // let source = { uri: 'data:image/jpeg;base64,' + response.data };
+        console.warn('OK'+response.latitude);
+        console.warn('OK'+response.longitude);
+        this.setState({
+          avatarSource: this.state.avatarSource.concat(source)
+        });
+      }
+    });
+  }
+
   render(){
     return (
       <Container>
@@ -28,10 +83,13 @@ export default class NewDiaryScreen extends React.Component {
         </Header>
         <View   style={{flex:2, backgroundColor: 'green'}} >
         </View>
-        <View style={{flex:3}} >
+        <View style={styles.container} >
+          <ScrollView style={{alignSelf: "stretch"}} showsVerticalScrollIndicator={true}>
+            <ImageList avatarSource={this.state.avatarSource}/>
+          </ScrollView>
         </View>
         <View style={{ position: 'absolute', bottom:0, right:0}}>
-          <TouchableHighlight onPress={() => this.props.navigation.navigate("NewDiary")}>
+          <TouchableHighlight onPress={this.selectPhotoTapped}>
             <Image
              style={styles.addIcon}
              source={addicon}/>
@@ -46,5 +104,15 @@ const styles = StyleSheet.create({
   addIcon:{
     width:50,
     height:50
-  }
+  },
+  container: {
+    flex: 3,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  avatar: {
+    width: 250,
+    height: 250,
+  },
 })
