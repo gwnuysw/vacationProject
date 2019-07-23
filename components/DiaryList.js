@@ -8,7 +8,11 @@ const SLIDER_1_FIRST_ITEM = 0;
 const Realm = require('realm');
 const authUrl = 'http://106.10.55.192:9080';
 
-const images ={
+/*
+class images {
+
+}
+images.schema ={
     name: 'images',
     primaryKey: 'uuid',
     properties: {
@@ -18,8 +22,11 @@ const images ={
         'logitude': 'double' ,
         'explanation':  'string?' ,
     }
+};
+class journal {
+
 }
-const journal ={
+journal.schema ={
     name: 'journal',
     primaryKey: 'uuid',
     properties: {
@@ -29,9 +36,9 @@ const journal ={
         'hashtags': 'string[]',
         'explanation': 'string?',
         'visibility': 'bool',
-    }
-}
-
+    },
+};
+*/
 
 
 export default class DiaryList extends Component {
@@ -49,22 +56,26 @@ export default class DiaryList extends Component {
     Realm.Sync.User.login(authUrl, creds).then(user => {
       // user is logged in
       // do stuff ...
-      const config = user.createConfiguration({
-        sync: { url: "realm://106.10.55.192:9080/~/journals",
+      let config = {
+        sync: {
+            user: user, 
+            url: "realm://106.10.55.192:9080/~/journals",
             error: err =>  Alert.alert('error 1', 'error1')
         },
-        schema: [images, journal ],
-      });
+        //schema: []
+      };
       Realm.open(config).then(realm => {
         
           // ...use the realm instance here
-        let results = realm.objects('images');
-        realm.close();
+        let results = realm.objects('images')[0];
+        
         //const result = results[0];
-        //Alert.alert(result.hashtags, result.title);
-        //this.setState({
-        //  ENTRIES1: [this.state.ENTRIES1,{title: result.title, subtitle: result.hashtags[0], illustration: result.imgs[0].img},]
-        //});
+        let ENTRIES1 = this.state.ENTRIES1;
+        ENTRIES1.push({title: results.title, subtitle: results.hashtags, illustration:'https://i.imgur.com/UYiroysl.jpg'});
+        this.setState({
+          ENTRIES1: ENTRIES1
+        });
+        realm.close();
       }).catch(error => {
         // Handle the error here if something went wrong
         Alert.alert('error 2',' error2');
@@ -153,4 +164,4 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     marginHorizontal: 8
   }
-})
+});
