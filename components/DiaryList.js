@@ -8,18 +8,6 @@ const SLIDER_1_FIRST_ITEM = 0;
 const Realm = require('realm');
 const authUrl = 'http://106.10.55.192:9080';
 
-/*const journal ={
-    name: 'journal',
-    primaryKey: 'uuid',
-    properties: {
-        'title':  'string' ,
-        'date': 'date' ,
-        'imgs': 'images[]' ,
-        'hashtags': 'string[]',
-        'explanation': 'string?',
-        'visibility': 'bool',
-    }
-}
 const images ={
     name: 'images',
     primaryKey: 'uuid',
@@ -31,7 +19,20 @@ const images ={
         'explanation':  'string?' ,
     }
 }
-*/
+const journal ={
+    name: 'journal',
+    primaryKey: 'uuid',
+    properties: {
+        'title':  'string' ,
+        'date': 'date' ,
+        'imgs': 'images[]' ,
+        'hashtags': 'string[]',
+        'explanation': 'string?',
+        'visibility': 'bool',
+    }
+}
+
+
 
 export default class DiaryList extends Component {
   constructor(props) {
@@ -52,7 +53,7 @@ export default class DiaryList extends Component {
         sync: { url: "realm://106.10.55.192:9080/~/journals",
             error: err =>  Alert.alert('error 1', 'error1')
         },
-        schema: [],
+        schema: [images, journal ],
       });
       Realm.open(config).then(realm => {
         
