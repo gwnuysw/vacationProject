@@ -17,6 +17,7 @@ const LATITUDE_DELTA = 0.03; // default : 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 let id = 0;
 
+const DEFAULT_PADDING = { top: 40, right: 40, bottom: 40, left: 40 };
 
 function randomColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -24,44 +25,66 @@ function randomColor() {
     .padStart(6, 0)}`;
 }
 
+function createMarker(LATITUDE, LONGITUDE) {
+  return {
+    latitude: LATITUDE,
+    longitude: LONGITUDE,
+  };
+}
+
 class Map extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
+      isMapReady: false,
       region: {
         latitude: 37.78825,
         longitude: -122.4324,
         latitudeDelta: 0.03,
         longitudeDelta: LONGITUDE_DELTA,
       },
-      markers: [],
+      markers: [
+        createMarker(37.78825, -122.4324),
+        createMarker(37.77825, -122.4324),
+        createMarker(37.76825, -122.4324),
+        createMarker(37.75825, -122.4324),
+        createMarker(37.65825, -122.4324),
+        createMarker(37.63825, -122.4324),
+      ],
     };
-    for (var i = 0; i < 10; i++) {
-      /* 마커 데이터 추가하는 부분 */
-      this.state.markers.push({
-        key : i,
-        coordinate : {
-          latitude : 37.78825 + (0.001 * i),
-          longitude : -122.4324,
-        },
-        pinColor : randomColor(),
-      });
-    }
   }
+
+  fitAllMarkers() {
+    this.map.fitToCoordinates(this.state.markers, {
+      edgePadding: DEFAULT_PADDING,
+      animated: true,
+    });
+  }
+
+  MapisReady() {
+    this.setState({ isMapReady : true});
+    this.fitAllMarkers();
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <MapView
+          ref={ref => {
+            this.map = ref;
+          }}
           provider={this.props.provider}
           style={styles.map}
           initialRegion={this.state.region}
+          onMapReady={() => this.MapisReady()}
         >
-          {this.state.markers.map(marker => (
+          {this.state.isMapReady && this.state.markers.map(marker => (
             <Marker
-              key={marker.key}
+              /* key={marker.key}
               coordinate={marker.coordinate}
-              pinColor={marker.color}
+              pinColor={marker.color} */
+              coordinate={marker}
             />
           ))}
         </MapView>
@@ -82,27 +105,6 @@ const styles = StyleSheet.create({
   },
   map: {
     ...StyleSheet.absoluteFillObject,
-  },
-  bubble: {
-    backgroundColor: 'rgba(255,255,255,0.7)',
-    paddingHorizontal: 18,
-    paddingVertical: 12,
-    borderRadius: 20,
-  },
-  latlng: {
-    width: 200,
-    alignItems: 'stretch',
-  },
-  button: {
-    width: 80,
-    paddingHorizontal: 12,
-    alignItems: 'center',
-    marginHorizontal: 10,
-  },
-  buttonContainer: {
-    flexDirection: 'row',
-    marginVertical: 20,
-    backgroundColor: 'transparent',
   },
 });
 
