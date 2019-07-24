@@ -5,10 +5,10 @@ import backgroundImg from '../assets/images/footsteplogo.png';
 export default class StartScreen extends React.Component {
 
   render() {
-    
+
     return (
       <TouchableHighlight
-      onPress={() => this.props.navigation.navigate("SignedOut")}
+      onPress={() => this.props.navigation.navigate("SignIn")}
       underlayColor="white">
         <ImageBackground
         source={backgroundImg}
