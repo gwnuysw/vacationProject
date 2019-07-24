@@ -47,3 +47,6 @@ react-native run-android
 
 회원가입 패스워드 강도측정 컴포넌트
 > https://www.npmjs.com/package/react-native-password-strength-meter#password-input-props
+
+이미지피커 링크 걸기
+`react-native link react-native-image-picker`
