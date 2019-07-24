@@ -89,6 +89,14 @@ export default class NewDiaryScreen extends React.Component {
           </ScrollView>
         </View>
         <View style={{ position: 'absolute', bottom:0, right:0}}>
+          <TextInput style={styles.inputs}
+            placeholder="제목"
+            UnderlineColorAndroid='transparent'
+          />
+          <TextInput style={styles.inputs}
+            placeholder="테마 설정"
+            UnderlineColorAndroid='transparent'
+          />
           <TouchableHighlight onPress={this.selectPhotoTapped}>
             <Image
              style={styles.addIcon}
@@ -115,4 +123,10 @@ const styles = StyleSheet.create({
     width: 250,
     height: 250,
   },
+  inputs:{
+      height:45,
+      marginLeft:16,
+      borderBottomColor: '#FFFFFF',
+      flex:1,
+  }
 })
