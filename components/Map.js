@@ -17,6 +17,7 @@ const LATITUDE_DELTA = 0.03; // default : 0.0922;
 const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 let id = 0;
 
+
 function randomColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
@@ -29,28 +30,25 @@ class Map extends React.Component {
 
     this.state = {
       region: {
-        latitude: LATITUDE,
-        longitude: LONGITUDE,
-        latitudeDelta: LATITUDE_DELTA,
+        latitude: 37.78825,
+        longitude: -122.4324,
+        latitudeDelta: 0.03,
         longitudeDelta: LONGITUDE_DELTA,
       },
       markers: [],
     };
-  }
-
-  /* onMapPress(e) {
-    this.setState({
-      markers: [
-        ...this.state.markers,
-        {
-          coordinate: e.nativeEvent.coordinate,
-          key: id++,
-          color: randomColor(),
+    for (var i = 0; i < 10; i++) {
+      /* 마커 데이터 추가하는 부분 */
+      this.state.markers.push({
+        key : i,
+        coordinate : {
+          latitude : 37.78825 + (0.001 * i),
+          longitude : -122.4324,
         },
-      ],
-    });
-  } */
-
+        pinColor : randomColor(),
+      });
+    }
+  }
   render() {
     return (
       <View style={styles.container}>
@@ -58,7 +56,6 @@ class Map extends React.Component {
           provider={this.props.provider}
           style={styles.map}
           initialRegion={this.state.region}
-          onPress={e => this.onMapPress(e)}
         >
           {this.state.markers.map(marker => (
             <Marker
