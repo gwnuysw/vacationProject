@@ -10,29 +10,22 @@ import { TouchableHighlight,
   NativeModules,
   Alert} from 'react-native';
 import ImagePicker from 'react-native-image-picker';
+import ImageCard from './ImageCard';
 export default class ImageList extends Component {
   static defaultProps = {
-    avatarSource: []
+    item: []
   }
 
   render() {
-    const { avatarSource } = this.props;
-    let data;
+    const avatarSource = this.props.item;
     const list = avatarSource.map((element) => {
-      return (<Image style={styles.avatar} source={element} />);
+      console.warn('imagelist map',element)
+      return (<ImageCard item={element} handleSetText={this.props.handleSetText}/>);
     });
-
     return (
       <View style={{marginBottom: 20}}>
         {list}
-        {data}
       </View>
     );
   }
 }
-const styles = StyleSheet.create({
-  avatar: {
-    width: 250,
-    height: 250,
-  },
-})

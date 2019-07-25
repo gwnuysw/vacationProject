@@ -5,7 +5,8 @@ import { TouchableHighlight,
   StyleSheet,
   View,
   Image,
-  ScrollView} from 'react-native';
+  ScrollView,
+  TextInput } from 'react-native';
 import { Container,
   Header,
   Left,
@@ -20,11 +21,22 @@ import addicon from '../assets/images/addicon.png';
 import ImageList from '../components/ImageList';
 export default class NewDiaryScreen extends React.Component {
   state = {
-    avatarSource: []
+    key:0,
+    item:[]
   };
   constructor(props) {
     super(props);
     this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
+  }
+  hadleSetText = (key, text) => {
+    const { item } = this.state;
+    this.setState({
+      item: this.state.item.map(
+        info => key === info.key
+          ? { ...info, text: text } // 새 객체를 만들어서 기존의 값과 전달받은 data 을 덮어씀
+          : info // 기존의 값을 그대로 유지
+      )
+    })
   }
   selectPhotoTapped() {
     const options = {
@@ -52,8 +64,15 @@ export default class NewDiaryScreen extends React.Component {
         // let source = { uri: 'data:image/jpeg;base64,' + response.data };
         console.warn('OK'+response.latitude);
         console.warn('OK'+response.longitude);
+        console.warn('OK'+response.timestamp);
         this.setState({
-          avatarSource: this.state.avatarSource.concat(source)
+          item:this.state.item.concat({
+            key:this.state.key++,
+            avatarSource: source,
+            latitude: response.latitude,
+            longitude: response.longitude,
+            timestamp: response.timestamp
+          })
         });
       }
     });
@@ -83,20 +102,24 @@ export default class NewDiaryScreen extends React.Component {
         </Header>
         <View   style={{flex:2, backgroundColor: 'green'}} >
         </View>
-        <View style={styles.container} >
+        <View  style={{flex:3}}>
           <ScrollView style={{alignSelf: "stretch"}} showsVerticalScrollIndicator={true}>
-            <ImageList avatarSource={this.state.avatarSource}/>
+            <View style={styles.inputContainer}>
+              <TextInput style={styles.inputs}
+                placeholder="제목"
+                UnderlineColorAndroid='transparent'
+              />
+            </View>
+            <View style={styles.inputContainer}>
+              <TextInput style={styles.inputs}
+                placeholder="테마 설정 #서울 #뉴욕 #데이트 ..."
+                UnderlineColorAndroid='transparent'
+              />
+            </View>
+            <ImageList item={this.state.item} hadleSetText={this.handleSetText}/>
           </ScrollView>
         </View>
         <View style={{ position: 'absolute', bottom:0, right:0}}>
-          <TextInput style={styles.inputs}
-            placeholder="제목"
-            UnderlineColorAndroid='transparent'
-          />
-          <TextInput style={styles.inputs}
-            placeholder="테마 설정"
-            UnderlineColorAndroid='transparent'
-          />
           <TouchableHighlight onPress={this.selectPhotoTapped}>
             <Image
              style={styles.addIcon}
@@ -113,11 +136,16 @@ const styles = StyleSheet.create({
     width:50,
     height:50
   },
-  container: {
-    flex: 3,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+  inputContainer: {
+      borderBottomColor: '#FFFFFF',
+      backgroundColor: '#FFFFFF',
+      borderRadius:30,
+      borderBottomWidth: 1,
+      width:250,
+      height:45,
+      marginBottom:20,
+      flexDirection: 'row',
+      alignItems:'center'
   },
   avatar: {
     width: 250,
