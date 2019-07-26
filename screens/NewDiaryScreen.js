@@ -19,6 +19,9 @@ import { Container,
 import ImagePicker from 'react-native-image-picker';
 import addicon from '../assets/images/addicon.png';
 import ImageList from '../components/ImageList';
+import Realm from 'realm';
+import images from '../schemas/images';
+import journal from '../schemas/journal';
 export default class NewDiaryScreen extends React.Component {
   state = {
     key:0,
@@ -27,6 +30,31 @@ export default class NewDiaryScreen extends React.Component {
   constructor(props) {
     super(props);
     this.selectPhotoTapped = this.selectPhotoTapped.bind(this);
+  }
+  upLoad(){
+    Realm.Sync.User.login(authUrl, creds).then(user => {
+      // user is logged in
+      // do stuff ...
+      let config = {
+        sync: {
+            user: user,
+            url: "realm://106.10.55.192:9080/~/journals",
+            error: err =>  Alert.alert('error 1', 'error1')
+        },
+        // schema: [] 따로 스키마 정의할 필요없이 저장된 데이터가 있으면 받아 올 수 있다.
+      };
+      Realm.open(config).then(realm => {
+        // ...use the realm instance here
+        realm.create('journal',{})
+        realm.close();
+      }).catch(error => {
+        // Handle the error here if something went wrong
+        Alert.alert('error 2',' error2');
+      });
+    }).catch(error => {
+      // an auth error has occurred
+      Alert.alert("Alert", "Invalid ID & Password");
+    });
   }
   hadleSetText = (key, text) => {
     const { item } = this.state;
@@ -47,10 +75,8 @@ export default class NewDiaryScreen extends React.Component {
         skipBackup: true,
       },
     };
-
     ImagePicker.showImagePicker(options, response => {
       console.log('Response = ', response);
-
       if (response.didCancel) {
         console.log('User cancelled photo picker');
       } else if (response.error) {
@@ -59,7 +85,6 @@ export default class NewDiaryScreen extends React.Component {
         console.log('User tapped custom button: ', response.customButton);
       } else {
         let source = {uri: response.uri};
-
         // You can also display the image using data:
         // let source = { uri: 'data:image/jpeg;base64,' + response.data };
         console.warn('OK'+response.latitude);
@@ -77,7 +102,6 @@ export default class NewDiaryScreen extends React.Component {
       }
     });
   }
-
   render(){
     return (
       <Container>
@@ -108,12 +132,14 @@ export default class NewDiaryScreen extends React.Component {
               <TextInput style={styles.inputs}
                 placeholder="제목"
                 UnderlineColorAndroid='transparent'
+                onChangeText={(text) => this.setState({title:text})}
               />
             </View>
             <View style={styles.inputContainer}>
               <TextInput style={styles.inputs}
                 placeholder="테마 설정 #서울 #뉴욕 #데이트 ..."
                 UnderlineColorAndroid='transparent'
+                onChangeText={(text) => this.setState({tags:text})}
               />
             </View>
             <ImageList item={this.state.item} hadleSetText={this.handleSetText}/>
@@ -127,7 +153,6 @@ export default class NewDiaryScreen extends React.Component {
           </TouchableHighlight>
         </View>
       </Container>
-
     );
   }
 }
