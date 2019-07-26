@@ -6,6 +6,7 @@ import SignInScreen from '../screens/SignInScreen';
 import SignUpScreen from '../screens/SignUpScreen';
 import NewDiaryScreen from '../screens/NewDiaryScreen';
 import ForgotpwScreen from '../screens/ForgotpwScreen';
+import MapScreen from '../screens/MapScreen'
 export default createAppContainer(
   createSwitchNavigator({
     // You could add another route here for authentication.
@@ -16,6 +17,7 @@ export default createAppContainer(
     NewDiary: NewDiaryScreen,
     Main: MainTabNavigator,
     Forgot : ForgotpwScreen,
+    MapScreen : MapScreen,
   },
   {
       initialRouteName: 'Start'
