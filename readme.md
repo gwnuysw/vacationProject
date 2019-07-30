@@ -41,7 +41,6 @@ npm i jetifier
 npx jetify
 <br>
 react-native run-android
-=======
 <br>
 <br>
 
@@ -50,3 +49,10 @@ react-native run-android
 
 이미지피커 링크 걸기
 `react-native link react-native-image-picker`
+=======
+
+안드로이드 src/main의 manifest파일에 추가
+```
+<uses-permission android:name="android.permission.CAMERA" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+```

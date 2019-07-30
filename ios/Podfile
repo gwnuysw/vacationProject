@@ -29,7 +29,6 @@ target 'rncli' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   pod 'RNNaverLogin', :path => '../node_modules/react-native-naver-login'
-
   pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
 
   target 'rncliTests' do

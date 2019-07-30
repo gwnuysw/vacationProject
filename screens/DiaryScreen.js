@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet, View, TouchableHighlight } from 'react-native';
+import { Image, StyleSheet, View, TouchableHighlight} from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
 import DiaryList from '../components/DiaryList.js';
 import addicon from '../assets/images/addicon.png';

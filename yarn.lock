@@ -4557,7 +4557,11 @@ nanomatch@^1.2.9:
 
 native-base-shoutem-theme@GeekyAnts/theme#master:
   version "0.2.3"
+<<<<<<< HEAD
   resolved "https://codeload.github.com/GeekyAnts/theme/tar.gz/51fcc2334ca225bdcc7a4cb2efcacc7bcbf3e2ef"
+=======
+  resolved "https://codeload.github.com/GeekyAnts/theme/tar.gz/18e6f46dcd55d431aa5994e3452b32b205a1be88"
+>>>>>>> imagepicker
   dependencies:
     hoist-non-react-statics "^1.0.5"
     lodash "4.17.11"

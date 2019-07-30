@@ -39,19 +39,12 @@ class Map extends React.Component {
     this.state = {
       isMapReady: false,
       region: {
-        latitude: 37.78825,
-        longitude: -122.4324,
+        latitude: 37.7836,
+        longitude: 127.0841,
         latitudeDelta: 0.03,
         longitudeDelta: LONGITUDE_DELTA,
       },
-      markers: [
-        createMarker(37.78825, -122.4324),
-        createMarker(37.77825, -122.4324),
-        createMarker(37.76825, -122.4324),
-        createMarker(37.75825, -122.4324),
-        createMarker(37.65825, -122.4324),
-        createMarker(37.63825, -122.4324),
-      ],
+      markers: [createMarker(37.7841,127.0851)],
     };
   }
 
@@ -66,7 +59,6 @@ class Map extends React.Component {
     this.setState({ isMapReady : true});
     this.fitAllMarkers();
   }
-
   render() {
     return (
       <View style={styles.container}>
@@ -79,14 +71,16 @@ class Map extends React.Component {
           initialRegion={this.state.region}
           onMapReady={() => this.MapisReady()}
         >
-          {this.state.isMapReady && this.state.markers.map(marker => (
-            <Marker
+          {this.state.isMapReady && this.props.item && this.props.item.map((marker) => {
+            console.warn('marker',marker.latitude);
+            console.warn('marker',marker.longitude);
+            return <Marker
               /* key={marker.key}
               coordinate={marker.coordinate}
               pinColor={marker.color} */
-              coordinate={marker}
+              coordinate={createMarker(marker.latitude, marker.longitude)}
             />
-          ))}
+          })}
         </MapView>
       </View>
     );
