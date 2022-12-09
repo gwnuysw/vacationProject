@@ -4557,11 +4557,7 @@ nanomatch@^1.2.9:
 
 native-base-shoutem-theme@GeekyAnts/theme#master:
   version "0.2.3"
-<<<<<<< HEAD
-  resolved "https://codeload.github.com/GeekyAnts/theme/tar.gz/51fcc2334ca225bdcc7a4cb2efcacc7bcbf3e2ef"
-=======
   resolved "https://codeload.github.com/GeekyAnts/theme/tar.gz/18e6f46dcd55d431aa5994e3452b32b205a1be88"
->>>>>>> imagepicker
   dependencies:
     hoist-non-react-statics "^1.0.5"
     lodash "4.17.11"
@@ -5271,9 +5267,9 @@ qs@^6.1.0:
   integrity sha512-VCdBRNFTX1fyE7Nb6FYoURo/SPe62QCaAyzJvUjwRaIsc+NePBEniHlvxFmmX56+HZphIGtV0XeCirBtpDrTyQ==
 
 qs@~6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.2.tgz#cb3ae806e8740444584ef154ce8ee98d403f3e36"
-  integrity sha512-N5ZAX4/LxJmF+7wN74pUD6qAh9/wnvdQcjq9TZjevvXzSUo7bfmw91saqMjzGS2xq91/odN2dW/WOl7qQHNDGA==
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.3.tgz#3aeeffc91967ef6e35c0e488ef46fb296ab76aad"
+  integrity sha512-qxXIEh4pCGfHICj1mAJQ2/2XVZkjCDTcEgfoSQxc/fYivUZxTkk7L3bDBJSoNrEzXI17oUO5Dp07ktqE5KzczA==
 
 query-string@^6.4.2:
   version "6.8.1"
@@ -5388,6 +5384,11 @@ react-native-keyboard-aware-scroll-view@0.8.0:
   dependencies:
     prop-types "^15.6.2"
     react-native-iphone-x-helper "^1.0.3"
+
+react-native-maps@^0.25.0:
+  version "0.25.0"
+  resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-0.25.0.tgz#81bc51eb50e33811a9e1c345cc48869413ead67d"
+  integrity sha512-PFJuW1pt+HnnnN0m0OGk29RSvICFVkK/DScX6cUk0SuCSN2DAHx0y6y57lZyYXcYqU4J4usNpfxgp/ccjASDiw==
 
 react-native-naver-login@^1.3.0:
   version "1.3.0"
